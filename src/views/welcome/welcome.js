@@ -4,8 +4,8 @@ class Welcome extends Component {
     constructor(props,sate){
         super(props);
         //this.handleEmail = this.props.handleEmail;
-        this.handleEmail = this.props.handleEmail.bind(sate);
-        this.state = {email: ''};
+        //this.handleEmail = this.props.handleEmail.bind(sate);
+        //this.state = {email: ''};
     }
 
     render() {
@@ -21,7 +21,7 @@ class Welcome extends Component {
                 </p>
                 <p>北京时间</p>
                 <div>
-                    请输入邮箱：<input  onChange={this.handleEmail}/>
+                    请输入邮箱：<input  onChange={this.props.handleEmail}/>
                 </div>
             </div>
         );
